@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let colors =["red","green","blue",]
+        // alert(colors)
+
+        // //fruits
+        // let fruits=["mango","watermelon","banana","orange"]
+        // alert(fruits);
+        // fruits[1]="pear";
+        // console.log(fruits)
+
+      //length of number
+        // let numbers=[1,2,3,4,5,6,7,8,9]
+        // let lengthofnumbers=numbers.length
+        // console.log(lengthofnumbers)
+    
+//phone number
+let phoneNumber =prompt("enter number")
+if(phoneNumber.startsWith("+254") && phoneNumber.length==13){
+    console.log("valid")
+}else if(phoneNumber.startsWith("07")|| phoneNumber.startsWith("01") && phoneNumber.length==10){
+    console.log("Valid")
+}else if(phoneNumber.startsWith("7") || phoneNumber.startsWith("1") && phoneNumber.length==9){
+    console.log("Valid")
+}else if(phoneNumber.startsWith("254") && phoneNumber.length==12){
+    console.log("valid")
+}else{console.log("invalid")}
+
+
+
+    </script>
+</body>
+</html>
