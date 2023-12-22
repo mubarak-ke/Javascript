@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let attempts = 0
+        let password = "admin@123"
+        let mail = "admin@mail.com"
+        for (i = 0; i < 3; i++) {
+            let pass = prompt("enter password")
+            let email = prompt("enter email")
+            if (pass === password && email === mail) {
+                console.log("login is successful")
+                break;
+            }
+
+            else {
+                console.log("invalid password or email");
+                attempts++;
+            }
+            if (attempts == 3) { "you have been blocked" }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="name"></h1>
+    <form id="liam" action="">
+        <label for="">first name</label>
+        <input id="first" type="text">
+        <label for="">second name</label>
+        <input id="second" type="text">
+        <input type="submit" value="concat">
+
+    </form>
+    <script>
+        // //binding
+        // let first_name = "muby"
+        // let second_name = "lwoya"
+        // let full_name = first_name + "" + second_name
+        // document.getElementById("name").innerHTML = `My Full Name is ${full_name}`
+
+        let form = document.getElementById("liam");
+        form.addEventListener('submit', function (e) {
+            //prevent page refreshing
+            e.preventDefault();
+
+            // check input fields
+            let first_name = document.getElementById("first_name").value;
+            let second_name = document.getElementById("second_name").value
+            if (first_name.length == 0 && second_name.length == 0) {
+                document.getElementById("full name").innerText = "insert value"
+
+            }
+            else {
+                let full_name = first_name + " " + second_name
+                document.getElementById("full_name").innerText = full_name
+            }
+        })
+    </script>
+</body>
+
+</html>

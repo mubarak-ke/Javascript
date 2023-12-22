@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+prods = [['omo','30kshs','300'], ['milk','50kshs','200'],['bread','45kshs','359'], ['coffee','5kshs','79']]
+let total_stock=0
+for(i=0; i<prods.length; i++){
+    let stock= prods[i][2]
+    let stk=Number(stock)
+    total_stock+=stk
+}
+console.log(total_stock)
+    </script>
+</body>
+</html>
