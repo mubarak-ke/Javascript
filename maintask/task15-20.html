@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let basic_salary = parseFloat(prompt("enter basic salary"))
+        let benefits = parseFloat(prompt("enter benefits"))
+        let gross_salary = benefits + basic_salary
+        let nhif = 0
+        if (gross_salary < 6000) {
+            nhif = 150
+        } else if (gross_salary >= 6000 && gross_salary < 8000) {
+            nhif = 300
+        } else if (gross_salary >= 8000 && gross_salary < 12000) {
+            nhif = 400
+        } else if (gross_salary >= 12000 && gross_salary < 15000) {
+            nhif = 500
+        } else if (gross_salary >= 15000 && gross_salary < 20000) {
+            nhif = 600
+        } else if (gross_salary >= 20000 && gross_salary < 25000) {
+            nhif = 750
+        } else if (gross_salary >= 25000 && gross_salary < 30000) {
+            nhif = 850
+        } else if (gross_salary >= 30000 && gross_salary < 35000) {
+            nhif = 900
+        } else if (gross_salary >= 35000 && gross_salary < 40000) {
+            nhif = 950
+        } else if (gross_salary >= 40000 && gross_salary < 45000) {
+            nhif = 1000
+        } else if (gross_salary >= 45000 && gross_salary < 50000) {
+            nhif = 1100
+        } else if (gross_salary >= 50000 && gross_salary < 60000) {
+            nhif = 1200
+        } else if (gross_salary >= 60000 && gross_salary < 70000) {
+            nhif = 1300
+        } else if (gross_salary >= 70000 && gross_salary < 80000) {
+            nhif = 1400
+        } else if (gross_salary >= 80000 && gross_salary < 90000) {
+            nhif = 1500
+        } else if (gross_salary >= 90000 && gross_salary < 100000) {
+            nhif = 1600
+        } else {
+            nhif = 1700
+        }
+        console.log(nhif)
+
+
+        // nssf
+        let nssf = 0
+        if (gross_salary < 18000) {
+            nssf = gross_salary * 0.06
+        } else {
+            nssf = 18000 * 0.06
+        }
+        console.log(nssf)
+
+        //nhdf
+
+        let nhdf = gross_salary * 0.015
+        console.log(nhdf)
+
+        //taxable income
+        let taxable_income = gross_salary - (NSSF + NHDF)
+        console.log(taxable_income)
+    </script>
+</body>
+
+</html>

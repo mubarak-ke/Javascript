@@ -7,9 +7,14 @@
 </head>
 <body>
     <script>
-        let program= parseInt(prompt("enter number"))
-        let dateofbirth = parseInt(prompt("enter number"))
-        if(dateofbirth&&)
+        
+        let dateofbirth = (prompt("enter dateofbirth"))
+        let today=new Date()
+        let birthday=new Date(dateofbirth)
+        let years=today.getFullYear() - birthday.getFullYear()
+        let months=today.getMonth()-birthday.getMonth()
+        let days=today.getDate()-birthday.getDate()
+        console.log(years,months,today,days)
     </script>
 </body>
 </html>

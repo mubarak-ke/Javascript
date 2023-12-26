@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="name"></h1>
+    <form id="liam">
+        <br>
+        <label for=""> fname</label>
+        <input id="first" type="text">
+        <br>
+        <label for="">lname</label>
+        <input id="second" type="text">
+        <br>
+        <input type="submit" value="Save">
+    </form>
+
+    <script>
+        let form = document.getElementById("liam")
+        form.addEventListener("submit", function (e) {
+            e.preventDefault()
+
+            let first_name = document.getElementById("fname").value;
+            let last_name = document.getElementById("lname").value;
+            if (first_name.length == 0 && last_name.length == 0) {
+
+                document.getElementById("name").innerText = "insert value"
+            }
+            else {
+                document.getElementById("name").innerHTML = first_name + " " + lname
+            }
+
+        })
+    </script>
+</body>
+
+</html>
